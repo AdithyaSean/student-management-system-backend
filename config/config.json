@@ -1,0 +1,37 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "",
+    "database": "student_management_dev",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres",
+    "migrationStorageTableName": "sequelize_meta",
+    "seederStorage": "sequelize",
+    "seederStorageTableName": "sequelize_data"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "",
+    "database": "student_management_test",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres",
+    "logging": false
+  },
+  "production": {
+    "username": "postgres",
+    "password": "",
+    "database": "student_management_prod",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres",
+    "logging": false,
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "acquire": 30000,
+      "idle": 10000
+    }
+  }
+}
